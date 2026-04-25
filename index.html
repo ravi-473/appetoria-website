@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appetoria — Fine Dining Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-icon">✦</span>
+      <span class="logo-text">Appetoria</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#specials" class="nav-link">Specials</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#reserve" class="nav-link">Reserve</a></li>
+      <li><a href="#location" class="nav-link">Location</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#admin" class="nav-link nav-admin">Owner Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="images/interior1.jpeg" alt="Appetoria Interior" class="hero-img" id="heroImg" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-tagline">Est. Kolkata — Where Flavour Meets Finesse</p>
+    <h1 class="hero-title">
+      <span class="hero-title-main">Appetoria</span>
+      <span class="hero-title-sub">A Culinary Journey</span>
+    </h1>
+    <p class="hero-desc">An exquisite dining experience blending continental elegance with rich Indian flavours — every plate a story.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">
+        <i class="fas fa-utensils"></i> View Menu
+      </a>
+      <a href="#reserve" class="btn btn-secondary">
+        <i class="fas fa-calendar-alt"></i> Reserve Table
+      </a>
+      <a href="https://maps.google.com/?q=Appetoria+Newtown+West+Bengal" target="_blank" class="btn btn-outline">
+        <i class="fas fa-map-marker-alt"></i> Get Directions
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll to Explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- AMBIENCE STRIP -->
+<section class="ambience-strip">
+  <div class="ambience-grid">
+    <div class="ambience-item">
+      <img src="images/interior3.jpeg" alt="Ambience" />
+    </div>
+    <div class="ambience-item ambience-text">
+      <div>
+        <p class="ambience-label">Our Story</p>
+        <h2>Crafted With Passion,<br/><em>Served With Love</em></h2>
+        <p>Nestled in the heart of Newtown, Appetoria brings you a world of flavours — from smoky tandoor-grilled kababs to creamy continental delights, from fragrant biryanis to indulgent desserts.</p>
+      </div>
+    </div>
+    <div class="ambience-item">
+      <img src="images/interior2.jpeg" alt="Ambience" />
+    </div>
+    <div class="ambience-item ambience-text ambience-dark">
+      <div>
+        <p class="ambience-label">Our Promise</p>
+        <h2>Every Visit Is<br/><em>Unforgettable</em></h2>
+        <p>Premium ingredients, skilled chefs, and warm hospitality — we craft not just meals, but memories worth returning for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL DISHES -->
+<section class="specials" id="specials">
+  <div class="section-header">
+    <p class="section-label">Chef's Selection</p>
+    <h2 class="section-title">Our Special Dishes</h2>
+    <div class="title-ornament"><span>✦</span></div>
+  </div>
+  <div class="specials-grid">
+    <div class="dish-card" data-delay="0">
+      <div class="dish-img-wrap">
+        <img src="images/food1.jpg" alt="Grilled Chicken with Herb Rice" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Continental</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Grilled Chicken in Mushroom Sauce</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="1">
+      <div class="dish-img-wrap">
+        <img src="images/food2.jpg" alt="Baked Pasta" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Pasta</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Non Veg Baked Pasta</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="2">
+      <div class="dish-img-wrap">
+        <img src="images/food3.jpg" alt="Chilli Chicken" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Chinese</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Chilli Chicken</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="3">
+      <div class="dish-img-wrap">
+        <img src="images/food4.jpg" alt="Korean Fried Chicken" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Starter</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Korean Fried Chicken</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="4">
+      <div class="dish-img-wrap">
+        <img src="images/food5.jpg" alt="Crispy Chicken with Fries" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Starter</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Crispy Chicken with Fries</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="5">
+      <div class="dish-img-wrap">
+        <img src="images/food6.jpg" alt="Peri Peri Chicken" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Starter</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Peri Peri Chicken</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+    <div class="dish-card" data-delay="6">
+      <div class="dish-img-wrap">
+        <img src="images/food7.jpg" alt="Chicken Tikka Kabab" loading="lazy"/>
+        <div class="dish-overlay">
+          <span class="dish-tag">Kabab</span>
+        </div>
+      </div>
+      <div class="dish-info">
+        <h3>Appetoria Spcl. Chelow Kabab</h3>
+        <div class="dish-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU SECTION -->
+<section class="menu-section" id="menu">
+  <div class="section-header light">
+    <p class="section-label">Explore Our</p>
+    <h2 class="section-title">Full Menu</h2>
+    <div class="title-ornament"><span>✦</span></div>
+  </div>
+
+  <div class="menu-controls">
+    <div class="menu-search-wrap">
+      <i class="fas fa-search"></i>
+      <input type="text" id="menuSearch" placeholder="Search dishes..." class="menu-search"/>
+    </div>
+    <div class="menu-filters" id="menuFilters">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="Soup">Soup</button>
+      <button class="filter-btn" data-cat="Starter">Starter</button>
+      <button class="filter-btn" data-cat="Kabab">Kabab</button>
+      <button class="filter-btn" data-cat="Biryani">Biryani</button>
+      <button class="filter-btn" data-cat="Indian Gravy">Indian Gravy</button>
+      <button class="filter-btn" data-cat="Chinese">Chinese</button>
+      <button class="filter-btn" data-cat="Noodles">Noodles</button>
+      <button class="filter-btn" data-cat="Fried Rice">Fried Rice</button>
+      <button class="filter-btn" data-cat="Continental">Continental</button>
+      <button class="filter-btn" data-cat="Pasta">Pasta</button>
+      <button class="filter-btn" data-cat="Pizza">Pizza</button>
+      <button class="filter-btn" data-cat="Sandwich">Sandwich</button>
+      <button class="filter-btn" data-cat="Sizzler">Sizzler</button>
+      <button class="filter-btn" data-cat="Naanza">Naanza</button>
+      <button class="filter-btn" data-cat="Bread">Bread</button>
+      <button class="filter-btn" data-cat="Thai">Thai</button>
+      <button class="filter-btn" data-cat="Momo">Momo</button>
+      <button class="filter-btn" data-cat="Dessert">Dessert</button>
+      <button class="filter-btn" data-cat="Drinks">Drinks</button>
+    </div>
+  </div>
+
+  <div class="menu-container" id="menuContainer"></div>
+</section>
+
+<!-- RESERVE TABLE -->
+<section class="reserve-section" id="reserve">
+  <div class="reserve-bg">
+    <img src="images/interior4.jpeg" alt="Reserve" />
+    <div class="reserve-overlay"></div>
+  </div>
+  <div class="reserve-content">
+    <div class="section-header">
+      <p class="section-label">Book Your Spot</p>
+      <h2 class="section-title">Reserve a Table</h2>
+      <div class="title-ornament"><span>✦</span></div>
+    </div>
+    <form class="reserve-form" id="reserveForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="resName" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-phone"></i> Mobile Number</label>
+          <input type="tel" id="resMobile" placeholder="+91 XXXXX XXXXX" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label><i class="fas fa-calendar"></i> Date</label>
+          <input type="date" id="resDate" required />
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-clock"></i> Time</label>
+          <input type="time" id="resTime" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label><i class="fas fa-users"></i> Number of Guests</label>
+          <select id="resGuests" required>
+            <option value="">Select guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+            <option>7+ Guests</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-comment-alt"></i> Special Request</label>
+          <input type="text" id="resRequest" placeholder="Any special request?" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">
+        <i class="fas fa-check-circle"></i> Confirm Reservation
+      </button>
+    </form>
+    <div class="reserve-success" id="reserveSuccess" style="display:none">
+      <div class="success-icon">✦</div>
+      <h3>Reservation Confirmed!</h3>
+      <p>Thank you! Your table has been reserved. We look forward to welcoming you at Appetoria.</p>
+      <button class="btn btn-outline" onclick="document.getElementById('reserveSuccess').style.display='none'; document.getElementById('reserveForm').style.display='flex'">Make Another</button>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section" id="location">
+  <div class="section-header">
+    <p class="section-label">Find Us</p>
+    <h2 class="section-title">Our Location</h2>
+    <div class="title-ornament"><span>✦</span></div>
+  </div>
+  <div class="location-grid">
+    <div class="location-info">
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>Address</h4>
+          <p>Shapoorji Petrolpump, Opposite Shapoorji Bharat Gas Godown, Patharghata, Shapoorji Pallonji Sukhobrishti Complex Rd, Action Area III, Newtown, West Bengal 700135</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-clock"></i></div>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Mon – Sun: 11:00 AM – 11:00 PM<br/>Last Order: 10:30 PM</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <h4>Contact</h4>
+          <p>Call us to reserve your table<br/>or for any queries</p>
+        </div>
+      </div>
+      <div class="location-btns">
+        <a href="https://maps.google.com/?q=Appetoria+Newtown+West+Bengal+700135" target="_blank" class="btn btn-primary">
+          <i class="fas fa-map"></i> Open in Google Maps
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Appetoria+Newtown+West+Bengal" target="_blank" class="btn btn-secondary">
+          <i class="fas fa-directions"></i> Get Directions
+        </a>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.73!2d88.4726!3d22.5946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM1JzQwLjYiTiA4OMKwMjgnMjEuNCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Appetoria Location">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-brand">
+      <div class="contact-logo">✦ Appetoria</div>
+      <p>Where every meal is a celebration of flavour, crafted with love and served with warmth.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/91XXXXXXXXXX" class="social-icon whatsapp-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="contact-info-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#specials">Special Dishes</a></li>
+        <li><a href="#menu">Full Menu</a></li>
+        <li><a href="#reserve">Reserve Table</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+    <div class="contact-info-col">
+      <h4>Hours</h4>
+      <p>Monday – Sunday</p>
+      <p class="hours-time">11:00 AM – 11:00 PM</p>
+      <p>Kitchen closes at 10:30 PM</p>
+      <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <p>© 2026 Appetoria. All rights reserved. Crafted with ✦ in Newtown, Kolkata.</p>
+  </div>
+</section>
+
+<!-- ADMIN PORTAL -->
+<section class="admin-section" id="admin">
+  <div class="admin-container">
+    <div class="section-header">
+      <p class="section-label">Owner Access</p>
+      <h2 class="section-title">Admin Portal</h2>
+      <div class="title-ornament"><span>✦</span></div>
+    </div>
+
+    <!-- Login -->
+    <div id="adminLogin" class="admin-login-box">
+      <form id="loginForm">
+        <div class="form-group">
+          <label><i class="fas fa-user-shield"></i> Username</label>
+          <input type="text" id="adminUser" placeholder="Enter username" />
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="adminPass" placeholder="Enter password" />
+        </div>
+        <p class="admin-hint">Default: username <strong>admin</strong> / password <strong>appetoria2026</strong></p>
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+        <p id="loginError" class="login-error" style="display:none">Invalid credentials. Try again.</p>
+      </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="adminDashboard" style="display:none">
+      <div class="admin-topbar">
+        <h3>📋 Reservation Dashboard</h3>
+        <div class="admin-topbar-right">
+          <span id="resCount" class="res-count-badge">0 bookings</span>
+          <button class="btn btn-outline btn-sm" onclick="logoutAdmin()">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </div>
+      <div class="admin-stats" id="adminStats">
+        <div class="stat-card">
+          <span class="stat-num" id="statTotal">0</span>
+          <span class="stat-label">Total</span>
+        </div>
+        <div class="stat-card confirmed">
+          <span class="stat-num" id="statConfirmed">0</span>
+          <span class="stat-label">Confirmed</span>
+        </div>
+        <div class="stat-card pending">
+          <span class="stat-num" id="statPending">0</span>
+          <span class="stat-label">Pending</span>
+        </div>
+        <div class="stat-card cancelled">
+          <span class="stat-num" id="statCancelled">0</span>
+          <span class="stat-label">Cancelled</span>
+        </div>
+      </div>
+      <div id="reservationsList" class="reservations-list">
+        <p class="no-bookings">No reservations yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
